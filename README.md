@@ -1,27 +1,40 @@
-# React + TypeScript + Vite
+# 🖥️ Visual Studio Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, web-based **Visual Studio Clone** that mimics the layout and experience of the Visual Studio IDE. Built with **React** and **TypeScript**, the app includes **resizable UI panels**, **syntax-highlighted code blocks**, and **dynamic tab management** — all styled with **Tailwind CSS** and powered by **Redux** for global state handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** – UI component framework  
+- **TypeScript** – Static typing and code scalability  
+- **React Redux** – State management across the app  
+- **@reduxjs/toolkit** – Simplified Redux setup (if used)  
+- **react-resizable-panels** – Resizable, draggable layout panels  
+- **react-syntax-highlighter** – Syntax-highlighted code rendering  
+- **uuid** – Unique IDs for tabs, files, etc.  
+- **Tailwind CSS** – Utility-first CSS framework  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## ✨ Key Features
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- 🧩 **Resizable Panels** – Drag-and-resize vertical and horizontal UI panels  
+- 🧠 **Global State Management with Redux** – Manage open tabs, editor states, and layout  
+- 🧾 **Syntax-Highlighted Editor View** – Render code blocks with syntax coloring  
+- 🧼 **Dynamic Tabs with UUIDs** – Safely manage tabs using unique identifiers  
+- 💅 **Clean, Responsive UI** – Built with Tailwind CSS for responsiveness  
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## 📁 Project Structure
+
+src/
+├── components/  # UI elements (tabs, editors, panels)
+├── features/    # Redux slices for managing state
+├── store/       # Redux store configuration
+├── styles/      # Tailwind base or global styles
+├── utils/       # Utility functions (UUID, helpers)
+├── App.tsx      # Root component
+└── index.tsx    # App entry point
+
